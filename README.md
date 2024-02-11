@@ -34,6 +34,9 @@ npm install
 npm run build
 ```
 
+```
+php artisan server
+```
 > Install Soketi if not installed (Websockets)
 
 ```
