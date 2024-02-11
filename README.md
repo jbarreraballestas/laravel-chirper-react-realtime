@@ -1,7 +1,7 @@
 ## Laravel chirps + websockets
 
 ```
-cp .env.example
+cp .env.example  .env
 ```
 
 > select your prefer database, sqlite default for example
