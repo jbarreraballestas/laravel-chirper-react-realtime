@@ -4,7 +4,7 @@
 cp .env.example  .env
 ```
 
-> select your prefer database, sqlite default for example
+> select your prefer database
 
 ```
 composer install
