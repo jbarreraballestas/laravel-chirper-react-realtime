@@ -37,7 +37,7 @@ npm run build
 ```
 php artisan serve
 ```
-> Install Soketi if not installed (Websockets)
+> Install Soketi if not installed or https://github.com/jbarreraballestas/laravel-websockets (Websockets) 
 
 ```
 npm -g install @soketi/soketi
