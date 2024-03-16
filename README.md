@@ -37,15 +37,15 @@ npm run build
 ```
 php artisan serve
 ```
-> Install Soketi if not installed or https://github.com/jbarreraballestas/laravel-websockets (Websockets) 
+> Install [Reverb](https://laravel.com/docs/reverb)
 
 ```
-npm -g install @soketi/soketi
+composer require laravel/reverb
 ```
 
-> Run soketi
+> Run reverb
 
 
 ```
-soketi start
+php artisanb reverb:start
 ```
