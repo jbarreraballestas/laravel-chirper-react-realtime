@@ -39,8 +39,18 @@ php artisan serve
 ```
 > Install [Reverb](https://laravel.com/docs/reverb)
 
+Laravel 10
+```bash
+composer require laravel/reverb:@beta
 ```
-composer require laravel/reverb
+
+```bash
+php artisan reverb:install
+```
+
+Laravel 11
+```bash
+php artisan install:broadcasting
 ```
 
 > Run reverb
