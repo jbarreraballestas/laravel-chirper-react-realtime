@@ -1628,6 +1628,7 @@
         },
         {
             "name": "laravel/sanctum",
+
             "version": "v4.0.1",
             "source": {
                 "type": "git",
@@ -1638,6 +1639,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravel/sanctum/zipball/d1de99bf8d31199aaf93881561622489ab91ba58",
                 "reference": "d1de99bf8d31199aaf93881561622489ab91ba58",
+
                 "shasum": ""
             },
             "require": {
@@ -1646,8 +1648,10 @@
                 "illuminate/contracts": "^11.0",
                 "illuminate/database": "^11.0",
                 "illuminate/support": "^11.0",
+
                 "php": "^8.2",
                 "symfony/console": "^7.0"
+
             },
             "require-dev": {
                 "mockery/mockery": "^1.6",
@@ -2081,6 +2085,7 @@
             "support": {
                 "issues": "https://github.com/thephpleague/flysystem/issues",
                 "source": "https://github.com/thephpleague/flysystem/tree/3.26.0"
+
             },
             "funding": [
                 {
