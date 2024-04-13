@@ -8,7 +8,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | This option controls the default server used by Reverb to handle
-    | incoming messages as well as braodcasting message to all your
+    | incoming messages as well as broadcasting message to all your
     | connected clients. At this time only "reverb" is supported.
     |
     */
@@ -35,6 +35,7 @@ return [
             'options' => [
                 'tls' => [],
             ],
+            'max_request_size' => env('REVERB_MAX_REQUEST_SIZE', 10_000),
             'scaling' => [
                 'enabled' => env('REVERB_SCALING_ENABLED', false),
                 'channel' => env('REVERB_SCALING_CHANNEL', 'reverb'),
@@ -72,7 +73,7 @@ return [
                 ],
                 'allowed_origins' => ['*'],
                 'ping_interval' => env('REVERB_APP_PING_INTERVAL', 60),
-                'max_message_size' => env('REVERB_APP_MAX_MESSAGE_SIZE', 10000),
+                'max_message_size' => env('REVERB_APP_MAX_MESSAGE_SIZE', 10_000),
             ],
         ],
 

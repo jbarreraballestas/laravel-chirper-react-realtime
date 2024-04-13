@@ -17,13 +17,13 @@ export default function Index({ auth, chirps }) {
     useEffect(() => {
         Echo.join(`chirps`)
             .here((users) => {
-                // console.log(users);
+                console.log(users);
             })
             .joining((user) => {
-                // console.log(user);
+                console.log(user.name + " ha ingresado");
             })
             .leaving((user) => {
-                // console.log(user);
+                console.log(user.name + " ha abandonado la sala");
             })
             .listen('ChirpCreated', (event) => {
                 setChirpsArray((chirps) => [...chirps, event.chirp]);
