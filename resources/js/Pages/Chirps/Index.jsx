@@ -27,7 +27,7 @@ export default function Index({ auth, chirps }) {
                 console.log(user.name + " ha abandonado la sala");
             })
             .listen('ChirpCreated', (event) => {
-                setChirpsArray((chirps) => [...chirps, event.chirp]);
+                setChirpsArray((chirps) => [event.chirp, ...chirps]);
             });
 
         return () => {

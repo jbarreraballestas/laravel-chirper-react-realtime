@@ -1,4 +1,4 @@
-## Laravel chirps + websockets
+## Laravel chirps + React (breeze = jsx) + websockets (reverb)
 
 ```
 cp .env.example  .env
@@ -58,4 +58,11 @@ php artisan install:broadcasting
 
 ```
 php artisanb reverb:start
+```
+
+> Run queue to execute jobs
+
+
+```
+php artisan queue:work
 ```
