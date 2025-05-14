@@ -4,6 +4,7 @@ import InputError from '@/Components/InputError';
 import PrimaryButton from '@/Components/PrimaryButton';
 import { useForm, Head } from '@inertiajs/react';
 import Chirp from '@/Components/Chirp';
+import echo from '@/echo';
 export default function Index({ auth, chirps }) {
     const [chirpsArray, setChirpsArray] = useState(chirps);
     const { data, setData, post, processing, reset, errors } = useForm({
@@ -15,7 +16,7 @@ export default function Index({ auth, chirps }) {
         post(route('chirps.store'), { onSuccess: () => reset() });
     };
     useEffect(() => {
-        Echo.join(`chirps`)
+        echo.join(`chirps`)
             .here((users) => {
                 console.log(users);
             })
