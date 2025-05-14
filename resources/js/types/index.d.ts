@@ -5,6 +5,13 @@ export interface Auth {
     user: User;
 }
 
+export interface Chirp {
+    id: string
+    message: string;
+    created_at: string;
+    user: User
+}
+
 export interface BreadcrumbItem {
     title: string;
     href: string;

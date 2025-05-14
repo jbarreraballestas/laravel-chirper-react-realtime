@@ -2,8 +2,7 @@ import { PlaceholderPattern } from '@/components/ui/placeholder-pattern';
 import AppLayout from '@/layouts/app-layout';
 import { type BreadcrumbItem } from '@/types';
 import { Head } from '@inertiajs/react';
-import { useEffect } from 'react';
-import echo from '../echo';
+
 const breadcrumbs: BreadcrumbItem[] = [
     {
         title: 'Dashboard',
@@ -12,22 +11,7 @@ const breadcrumbs: BreadcrumbItem[] = [
 ];
 
 export default function Dashboard() {
-    useEffect(() => {
-        console.log("use effect");
-        echo.join(`chat`)
-            .here((users: any) => {
-                console.log(users);
-            })
-            .joining((user: any) => {
-                console.log(user.name);
-            })
-            .leaving((user: any) => {
-                console.log(user.name);
-            })
-            .error((error: any) => {
-                console.error(error);
-            });
-    }, []);
+    
     return (
         <AppLayout breadcrumbs={breadcrumbs}>
             <Head title="Dashboard" />
